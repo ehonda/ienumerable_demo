@@ -20,26 +20,35 @@ namespace IEnumerableTest
             var values = new List<int> { 0 };
 
             // IEnumerable twice
+            Console.WriteLine("IEnumerable twice");
+            Console.WriteLine("------------------------------------------");
             var projectedWithIEnumerable = MakeAndReturnIEnumerable(values);
             foreach (var p in projectedWithIEnumerable)
                 Console.WriteLine($"Selected value is {p}");
             foreach (var p in projectedWithIEnumerable)
                 Console.WriteLine($"Selected value is {p}");
+            Console.WriteLine("");
 
             // IList twice
+            Console.WriteLine("IList twice");
+            Console.WriteLine("------------------------------------------");
             var projectedWithIList = MakeAndReturnIList(values);
             foreach (var p in projectedWithIList)
                 Console.WriteLine($"Selected value is {p}");
             foreach (var p in projectedWithIList)
                 Console.WriteLine($"Selected value is {p}");
+            Console.WriteLine("");
 
-            // IList -> IEnumerable twice
+
+            // List -> IEnumerable twice
+            Console.WriteLine("List used via IEnumerable twice");
+            Console.WriteLine("------------------------------------------");
             var projectedWithIListReturnIEnumerable = MakeListAndReturnIEnumerable(values);
             foreach (var p in projectedWithIListReturnIEnumerable)
                 Console.WriteLine($"Selected value is {p}");
             foreach (var p in projectedWithIListReturnIEnumerable)
                 Console.WriteLine($"Selected value is {p}");
-
+            Console.WriteLine("");
         }
     }
 }
