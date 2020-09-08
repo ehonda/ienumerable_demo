@@ -16,7 +16,7 @@ namespace IEnumerableTest
         {
             Console.WriteLine(caption);
             Console.WriteLine("------------------------------------------");
-            foreach(var p in projected)
+            foreach (var p in projected)
                 Console.WriteLine($"Projected value is {p}");
             foreach (var p in projected)
                 Console.WriteLine($"Projected value is {p}");
